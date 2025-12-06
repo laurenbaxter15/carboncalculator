@@ -11,6 +11,16 @@ from drafter import (
 )
 from drafter.llm import *
 
+set_site_information(
+    author="lmbaxter@udel.edu",
+    description="Carbon Footprint Calculator",
+    sources=["Gemini"],
+    links=[
+        "https://github.com/carbon-calculator-laurenbaxter15"],
+)
+hide_debug_information()
+set_website_title("Carbon Footprint Calculator")
+set_website_framed(False)
 
 @dataclass
 class State:
